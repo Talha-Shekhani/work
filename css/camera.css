@@ -363,6 +363,11 @@
 	float: left;
 }
 
+@media (min-width: 768px){
+	.camera_pag {margin: 0px; float: right; right: 40%; left: 40%; position: absolute;}
+}
+
+
 .camera_pag ul li+li {
 	margin-left: 3px;
 }
