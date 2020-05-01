@@ -756,7 +756,7 @@ body {
 	padding: 0 20px 0 24px;
 }
 
-.close {
+/* .close {
   cursor: pointer;
   position: absolute;
   right: 0;
@@ -765,7 +765,7 @@ body {
   color: #111;
   text-decoration: none;
   font-size: 20px;
-  padding: 10px 20px; }
+  padding: 10px 20px; } */
 
 .active {
   width: 100% !important;

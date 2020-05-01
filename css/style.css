@@ -1093,3 +1093,11 @@ border: 1px solid #000000;
 padding: 4px; 
 z-index:1;
 }
+
+.mh-1 {
+	background: #bfdde8;
+}
+
+.modal-body {
+	background: #e0e0e0;
+}
