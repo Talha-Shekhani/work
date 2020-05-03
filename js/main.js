@@ -12,26 +12,26 @@ $('.all-content').hide();
 * Click list
 *
 **/
-$('.a_content li').click(function(){
+// $('.a_content li').click(function(){
 
-	/* Hide Card Front & Card Back from all lists */
-	$('.card-front, .card-back').hide();
+// 	/* Hide Card Front & Card Back from all lists */
+// 	$('.card-front, .card-back').hide();
 
-	/* Remove Class active, Hide and Adding border: none to the lists */
-	$('.a_content li').removeClass('active').hide().css('border','none');
-	$(this).addClass('active').show();
+// 	/* Remove Class active, Hide and Adding border: none to the lists */
+// 	$('.a_content li').removeClass('active').hide().css('border','none');
+// 	$(this).addClass('active').show();
 
-	/* Get Background Color */
-	bgColor = $('.active .card-back').css('background-color');
-	$('.content').css('background-color',bgColor);
+// 	/* Get Background Color */
+// 	bgColor = $('.active .card-back').css('background-color');
+// 	$('.content').css('background-color',bgColor);
 
-	/* Show Close Element & Content of list */
-	$('.close, .all-content').show();
+// 	/* Show Close Element & Content of list */
+// 	$('.close, .all-content').show();
 
-	/* Append close element and Add CSS effect "bounceInLeft"*/
-	$('.responsive').append('<span class="close">close</span>').addClass(effect);
+// 	/* Append close element and Add CSS effect "bounceInLeft"*/
+// 	$('.responsive').append('<span class="close">close</span>').addClass(effect);
 
-});
+// });
 
 
 /**
