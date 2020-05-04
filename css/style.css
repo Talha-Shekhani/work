@@ -1093,3 +1093,40 @@ border: 1px solid #000000;
 padding: 4px; 
 z-index:1;
 }
+
+.mh-1 {
+	background: #bfdde8;
+}
+.mh-2 {
+	background: #d37ba3;
+}
+.mh-3 {
+	background: #a2cac2;
+}
+.mh-4 {
+	background: #bfdde8;
+}
+.mh-5 {
+	background: #cebfd4;
+}
+.mh-6 {
+	background: #d37ba3;
+}
+.mh-7 {
+	background: #a2cac2;
+}
+.mh-8 {
+	background: #bfdde8;
+}
+.mh-9 {
+	background: #cebfd4;
+}
+.modal-title {
+	font: "Arial", sans-serif !important;
+	padding: 0px;
+}
+
+.modal-body {
+	background: #e0e0e0 !important;
+	color: black;
+}
