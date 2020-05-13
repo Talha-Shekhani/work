@@ -83,14 +83,14 @@ padding-top: 7px;
 }
 
 
-.btns a.btn {
+.btns .btn {
 	margin: 0 !important;
 	cursor: pointer;
 }
 
-.btns a.btn {
+.btns .btn {
 	background: none;
-	padding-right: 0;
+	padding-right: auto;
 	margin-left: 20px !important;
 	text-align: center;
 }
@@ -129,4 +129,13 @@ padding-top: 7px;
 
 .success_wrapper {
 	position: relative;	
+}
+
+#mail-fail {
+	color: red;
+
+}
+#mail-sent {
+	color: green;
+	
 }

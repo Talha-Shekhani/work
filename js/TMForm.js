@@ -155,33 +155,33 @@
 				,placeholder
 						
 			opt=$.extend({
-					placeholderClass:'_placeholder'
-					,placeholderFocusedClass:'focused'
-					,placeholderHiddenClass:'hidden'
+					// placeholderClass:'_placeholder'
+					// ,placeholderFocusedClass:'focused'
+					// ,placeholderHiddenClass:'hidden'
 				},opt)
 				
 			init()
 			
 			function init(){
-				placeholder_text=th.attr('placeholder')
-				placeholder=$(document.createElement('span'))
-				placeholder
-					.addClass(opt.placeholderClass)
-					.css({				
-						left:th.prop('offsetLeft')
-						,top:th.prop('offsetTop')
-						,width:th.width()
-						,height:th.outerHeight()				
-					})
-					.text(placeholder_text)
-					.appendTo(th.parent())				
-					.click(function(){
-						th.focus()
-						return false
-					})
-					.on('contextmenu',function(){						
-						th.trigger('hide.placeholder').focus()						
-					})
+				// placeholder_text=th.attr('placeholder')
+				// placeholder=$(document.createElement('span'))
+				// placeholder
+				// 	.addClass(opt.placeholderClass)
+				// 	.css({				
+				// 		left:th.prop('offsetLeft')
+				// 		,top:th.prop('offsetTop')
+				// 		,width:th.width()
+				// 		,height:th.outerHeight()				
+				// 	})
+				// 	.text(placeholder_text)
+				// 	.appendTo(th.parent())				
+				// 	.click(function(){
+				// 		th.focus()
+				// 		return false
+				// 	})
+				// 	.on('contextmenu',function(){						
+				// 		th.trigger('hide.placeholder').focus()						
+				// 	})
 				
 				th
 					.val('')
