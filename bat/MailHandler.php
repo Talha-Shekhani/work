@@ -34,7 +34,6 @@
 
 require_once('./PHPMailer/PHPMailerAutoload.php');
 
-// require '../vendor/autoload.php';
 $mail = new PHPMailer();
 $mail->isSMTP();
 // $mail->SMTPAuth();
@@ -43,25 +42,19 @@ $mail->SMTPSecure = 'ssl';
 $mail->Host = 'smtp.gmail.com';
 $mail->Port = 465;
 $mail->isHTML();
-// $mail->SMTPAuth = true;
 $mail->Username = $from;
-//Password to use for SMTP authentication
 $mail->Password = $pswd;
+$mail->SMTPDebug = SMTP::DEBUG_SERVER;
 //Set who the message is to be sent from
 $mail->setFrom($from, $_POST["name"]);
-$mail->Subject = 'PHPMailer GMail SMTP test';
+$mail->Subject = $subject;
 $mail->Body = $messageBody;
-$mail->addAddress("hasnainshoaib45@gmail.com", "Hasnain");
+$mail->addAddress("cetechnologys@gmail.com", "CETechnology");
 if (!$mail->send()) {
 	header("Location: /index-5.html?mail=fail");
     // echo 'Mailer Error: '. $mail->ErrorInfo;
 } else {
 	header("Location: /index-5.html?mail=sent");
-    //Section 2: IMAP
-    //Uncomment these to save your message in the 'Sent Mail' folder.
-    #if (save_mail($mail)) {
-    #    echo "Message saved!";
-    #}
 }
 
 ?>
