@@ -38,9 +38,9 @@ $mail = new PHPMailer();
 $mail->isSMTP();
 // $mail->SMTPAuth();
 $mail->SMTPAuth = true;
-$mail->SMTPSecure = 'ssl';
+$mail->SMTPSecure = 'tls';
 $mail->Host = 'smtp.gmail.com';
-$mail->Port = 465;
+$mail->Port = 587;
 $mail->isHTML();
 $mail->Username = $from;
 $mail->Password = $pswd;
@@ -49,10 +49,11 @@ $mail->SMTPDebug = SMTP::DEBUG_SERVER;
 $mail->setFrom($from, $_POST["name"]);
 $mail->Subject = $subject;
 $mail->Body = $messageBody;
-$mail->addAddress("cetechnologys@gmail.com", "CETechnology");
+$mail->addAddress("talhats309@gmail.com", "Talha");
+// $mail->addAddress("cetechnologys@gmail.com", "CETechnology");
 if (!$mail->send()) {
-	header("Location: /index-5.html?mail=fail");
-    // echo 'Mailer Error: '. $mail->ErrorInfo;
+	// header("Location: /index-5.html?mail=fail");
+    echo 'Mailer Error: '. $mail->ErrorInfo;
 } else {
 	header("Location: /index-5.html?mail=sent");
 }
