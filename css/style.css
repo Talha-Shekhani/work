@@ -1164,7 +1164,7 @@ span.link10 a:hover span {
         padding-left: 30px;
     }
     .nav-item a {
-		font-size: 10px;
+        font-size: 10px;
 	}
 	.nav-item a {
 		padding-top: 0;
@@ -1232,6 +1232,7 @@ span.link10 a:hover span {
 }
 
 .nav-item:hover {
+    color: white;
 	background-color: #a2cac2;
 }
 
@@ -1249,4 +1250,27 @@ span.link10 a:hover span {
 .nav-head {
 	font-family: 14px/20px 'Open Sans', sans-serif;
 	color: black;
+}
+
+.dropdown-menu .dropdown-item:hover  {
+    color: white;
+    padding: 10px;
+    margin: 0;
+    background-color: #a2cac2;
+}
+
+.dropdown-menu {
+    left: -100px
+}
+
+.navbar-nav .dropdown-menu {
+    position: absolute !important;
+}
+
+a {
+    cursor: pointer;
+}
+
+.dropdown-menu:hover, .dropdown-item:hover, .nav-item:nth-child(7) {
+    color: white !important;
 }
