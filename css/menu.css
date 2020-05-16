@@ -15,7 +15,7 @@ nav.bt-menu  ul li {
 	color: #848282;
 }
 nav.bt-menu  ul li:first-child+li+li {
-	margin-right: 120px;
+	/* margin-right: 120px; */
 }
 
 .bt-overlay {
@@ -212,3 +212,18 @@ nav.bt-menu  ul li a:hover, nav ul li.current  {
 	display: none;
 }
 
+@media (max-width: 768px) {
+	nav.bt-menu ul li {
+		font: bold 12px 'Open Sans', sans-serif;
+		margin-right:  1px;
+		margin-left: 1px;
+		margin-top: 5px;
+	}
+	
+  }
+  @media (min-width: 768px) {
+	  nav.bt-menu ul li {
+		font: bold 18px 'Open Sans', sans-serif;
+		color: #848282;
+	  }
+  }

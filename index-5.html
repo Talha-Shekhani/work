@@ -59,49 +59,42 @@
         <div class="container p-0">
             <div class="row row-header">
                 <div class="col-12 col-md-12">
-                    <a class="offset-xl-1" href="index.html"><img src="images/logo.png" alt="Cutting Edge Tecnology" /></a>
-                    <div class="menu_block col">
+                    <a class="offset-xl-1" href="index.html"><img src="images/logo1.png" alt="Cutting Edge Tecnology"></a>
+                    <div class="menu_block">
                         <nav id="bt-menu" class="bt-menu row">
                             <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
-                            <ul>
-                                <li class="current bt-icon mr-1">
-                                    <a href="index.html">Home</a>
-                                </li>
-                                <li class="bt-icon mr-1"><a href="index-1.html">About</a></li>
-                                <li class="bt-icon mr-5">
-                                    <a href="index-2.html">Services</a>
-                                </li>
-                                <li class="bt-icon mr-1 pl-5">
-                                    <a href="index-3.html">Projects</a>
-                                </li>
-                                <li class="bt-icon mr-1">
-                                    <a href="index-4.html">Graphics</a>
-                                </li>
-                                <li class="bt-icon mr-1">
-                                    <a href="index-5.html">Contacts</a>
-                                </li>
+                            <ul class="mt-5">
+                                <li class="bt-icon ml-4 mr-2 ml-md-3 mr-md-4 mr-xl-5"><a href="index.html">Home</a></li>
+                                <li class="bt-icon mr-2 mr-md-4 mr-xl-5"><a href="index-1.html">About</a></li>
+                                <li class="bt-icon mr-5 mr-md-5"><a href="index-2.html">Services</a></li>
+                                <li class="bt-icon ml-3 mr-2 ml-md-5"><a href="index-3.html">Projects</a></li>
+                                <li class="bt-icon mr-2 mr-md-4 mr-xl-5"><a href="index-4.html">Graphics</a></li>
+                                <li class="current bt-icon mr-4 mr-md-4 mr-xl-5"><a href="index-5.html">Contacts</a></li>
                             </ul>
                         </nav>
                         <div class="clear"></div>
                     </div>
                     <div class="clear"></div>
                 </div>
+
             </div>
         </div>
+
+
     </header>
     <!--==============================Content=================================-->
     <div class="content cont2">
         <div class="ic">Created by Cutting Edge Techology Dallas</div>
-        <div class="container_12">
-            <div class="grid_12">
+        <div class="container p-0">
+            <div class="col-12">
                 <h2 class="mb0 center">Find Us</h2>
             </div>
         </div>
     </div>
     <div class="gray_block gb1">
-        <div class="container_12">
+        <div class="container p-0">
             <div class="row">
-                <div class="col-10  col-lg-12 offset-1 offset-lg-0">
+                <div class="col-11 col-lg-12 ml-3">
                     <div class="map">
                         <figure class="">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107093.12606697816!2d-96.89929799999999!3d32.986365950000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c212bbbdd571f%3A0x9c1efd49b3841d5d!2sCarrollton%2C+TX!5e0!3m2!1sen!2sus!4v1433354832746"
@@ -214,9 +207,10 @@
         </div>
 
         <!--==============================footer=================================-->
-        <footer>
-            <div class="container_12">
-                <div class="grid_12">
+        <footer class="conatiner p-0 pb-5">
+            <hr>
+            <div class="row">
+                <div class="col-12">
                     <div class="socials">
                         <a href="https://www.facebook.com/cutedgeweb" class="fa fa-facebook"></a>
                         <a href="#" class="fa fa-twitter"></a>
@@ -241,42 +235,42 @@
             });
             check_mail()
             clear_fail()
+
             function clear_fail() {
-              $("#mail-fail").text("")
+                $("#mail-fail").text("")
             }
+
             function check_mail() {
-              var vars = {};
-              var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-                vars[key] = value;
-              });
-              $(document).ready(() => {
-                if (vars.mail == 'fail'){
-                  $("#mail-fail").text("Mail Sending Failed!")
-                }
-                else if (vars.mail == 'sent') {
-                  $("#mail-sent").text("Mail Sent!")
-                }
-              }
-              )
-              
+                var vars = {};
+                var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
+                    vars[key] = value;
+                });
+                $(document).ready(() => {
+                    if (vars.mail == 'fail') {
+                        $("#mail-fail").text("Mail Sending Failed!")
+                    } else if (vars.mail == 'sent') {
+                        $("#mail-sent").text("Mail Sent!")
+                    }
+                })
+
             }
             (function() {
                 'use strict';
                 window.addEventListener('load', function() {
-                  // Get the forms we want to add validation styles to
-                  var forms = document.getElementsByClassName('needs-validation');
-                  // Loop over them and prevent submission
-                  var validation = Array.prototype.filter.call(forms, function(form) {
-                    form.addEventListener('submit', function(event) {
-                      if (form.checkValidity() === false) {
-                        event.preventDefault();
-                        event.stopPropagation();
-                      }
-                      form.classList.add('was-validated');
-                    }, false);
-                  });
+                    // Get the forms we want to add validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function(form) {
+                        form.addEventListener('submit', function(event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
                 }, false);
-              })();
+            })();
         </script>
 </body>
 
