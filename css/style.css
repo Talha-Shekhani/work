@@ -1237,7 +1237,7 @@ span.link10 a:hover span {
 }
 
 .nav-item:first-child {
-	/* border-left: 1px solid #a2cac2; */
+	border-left: 1px solid #a2cac2;
 	border-radius: 5px;
 }
 .nav-item {
@@ -1269,8 +1269,4 @@ span.link10 a:hover span {
 
 a {
     cursor: pointer;
-}
-
-.dropdown-menu:hover, .dropdown-item:hover, .nav-item:nth-child(7) {
-    color: white !important;
 }
