@@ -70,11 +70,11 @@
                 <div class="col-12 col-md-12">
                     <a class="offset-xl-1" href="index.html"><img src="images/logo1.png" alt="Cutting Edge Tecnology"></a>
                     <hr>
-                    <nav class="navbar navbar-dark navbar-expand-xxl p-1 ">
+                    <nav class="navbar  navbar-expand-xxl p-1 ">
                         <div class="container p-0">
                             <a class="navbar-brand" href="index.html"><img src="images/untitled-2.png" height="38" width="48" alt="Logo"></a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                                    <span class="navbar-toggler-icon"></span>
+                            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#Navbar">
+                                    <span class="navbar-toggler-icon "></span>
                                 </button>
                             <div class="collapse navbar-collapse" id="Navbar">
                                 <ul class="navbar-nav">
@@ -84,7 +84,7 @@
                                     <li class="nav-item"><a class="nav-link" href="index-3.html"> Projects</a></li>
                                     <li class="nav-item"><a class="nav-link" href="index-4.html"> Graphics</a></li>
                                     <li class="nav-item"><a class="nav-link" href="index-5.html"> Contacts</a></li>
-                                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown">Plans</a>
+                                    <li class="nav-item dropdown"><a class="nav-link navv-wh dropdown-toggle" data-toggle="dropdown">Plans</a>
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="index-6.html">Standard Website</a>
                                             <a class="dropdown-item" href="index-1a.html">Ecommerce Website</a>
@@ -107,7 +107,7 @@
     <!--==============================Content=================================-->
     <div class="container p-0 m-0">
         <div class="ic">More Websites at Cutting Edge Technology</div>
-        <div class="row">
+        <div class="row ml-5">
             <div class="col-10 col-md-6 col-lg-4 offset-1 offset-md-0">
                 <h2 class="d-flex justify-content-center">Who We Are</h2>
                 <div class="text-center">
@@ -176,7 +176,7 @@
     <hr>
     <footer class="conatiner p-0 pb-5">
         <hr>
-        <div class="row">
+        <div class="row  mr-0 ml-0">
             <div class="col-12">
                 <div class="socials">
                     <a href="https://www.facebook.com/cutedgeweb" class="fa fa-facebook"></a>
@@ -200,6 +200,15 @@
                 }
             );
         });
+        $(document).ready(function() {
+                $('.dropdown-menu').hover(function(){
+                    $('.navv-wh').addClass("text-white");
+                },
+                function() {
+                    $('.navv-wh').removeClass("text-white");
+                }
+                );
+            });
     </script>
 </body>
 

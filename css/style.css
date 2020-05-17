@@ -1,4 +1,3 @@
-/**/
 
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400);
 @import url(//fonts.googleapis.com/css?family=Open+Sans:300);
@@ -1213,14 +1212,15 @@ span.link10 a:hover span {
 }
 
 .nav-item a {
-	color: #a2cac2 !important;
+    color: #a2cac2  ;
+    
 }
 
 .nav-item a:hover, .nav-item:hover {
 	color: white !important;
 }
 .navbar-toggler {
-    background-color: #a2cac2;
+    background-color: #a2cac2 !important;
     padding: 0 10px;
 }
 
@@ -1232,7 +1232,7 @@ span.link10 a:hover span {
 }
 
 .nav-item:hover {
-    color: white;
+    color: white !important;
 	background-color: #a2cac2;
 }
 
@@ -1253,11 +1253,12 @@ span.link10 a:hover span {
 }
 
 .dropdown-menu .dropdown-item:hover  {
-    color: white;
+    color: white !important;
     padding: 10px;
     margin: 0;
     background-color: #a2cac2;
 }
+
 
 .dropdown-menu {
     left: -100px
