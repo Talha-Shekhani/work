@@ -694,6 +694,7 @@ footer {
     text-align: center;
     font-size: 12px;
     line-height: 14px;
+    float: left;
 }
 
 footer a:hover {}
@@ -1212,7 +1213,7 @@ span.link10 a:hover span {
 }
 
 .nav-item a {
-    color: #a2cac2  ;
+    color: #a2cac2 !important ;
     
 }
 
